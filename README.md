@@ -2,7 +2,7 @@
 
 This my personal portfolio created using the React Framework.
 
-### Install dependencies
+## Install dependencies
 ```
 npm install
 ```
