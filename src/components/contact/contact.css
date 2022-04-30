@@ -12,10 +12,13 @@
 }
 
 .contact__option {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
     background: var(--color-bg-variant);
     padding: 1.2rem;
     border-radius: 1.2rem;
-    text-align: center;
+    text-align: left;
     border: 1px solid transparent;
     transition: var(--transition);
 }

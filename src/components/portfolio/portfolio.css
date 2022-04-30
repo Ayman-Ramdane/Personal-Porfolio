@@ -18,6 +18,7 @@
 }
 
 .portfolio__item-image {
+    background: linear-gradient(var(--color-primary), transparent);
     border-radius: 1.5rem;
     overflow: hidden;
 }

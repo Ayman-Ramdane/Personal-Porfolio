@@ -1,19 +1,22 @@
 import React from 'react'
 import './footer.css'
+import '../nav/nav.css'
 import { GrLinkedinOption } from 'react-icons/gr'
 import { RiGithubLine } from 'react-icons/ri'
+import { useState } from 'react'
 
-const footer = () => {
+const Footer = () => {
+  const [activeNav, setActiveNav] = useState('#')
   return (
     <footer>
       <a href="#" className='footer__logo'>Ayman RAMDANE</a>
 
       <ul className='permalinks'>
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" onClick={() => setActiveNav('#')}>Accueil</a></li>
+        <li><a href="#about" onClick={() => setActiveNav('about')}>À Propos</a></li>
+        <li><a href="#experience" onClick={() => setActiveNav('experience')}>Experience</a></li>
+        <li><a href="#portfolio" onClick={() => setActiveNav('portfolio')}>Portfolio</a></li>
+        <li><a href="#contact" onClick={() => setActiveNav('contact')}>Contact</a></li>
       </ul>
 
       <div className="footer__socials">
@@ -28,4 +31,4 @@ const footer = () => {
   )
 }
 
-export default footer
+export default Footer
