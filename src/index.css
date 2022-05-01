@@ -1,5 +1,7 @@
+/* Importer la police utilisée depuis Google fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+/* Retirer le style par défaut des navigateurs  */
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +12,7 @@
     text-decoration: none;
 }
 
+/* Définir les variables utilisée dans l'ensemble du projet  */
 :root {
     --color-bg: #033F63;
     --color-bg-variant: #28666E;
@@ -114,6 +117,8 @@ img {
     width: 100%;
     object-fit: cover;
 }
+
+/* Adapter la page aux différentes tailles d'écran */
 
 /* MEDIA QUERIES (MEDIUM DEVICES) */
 @media screen and (max-width: 1024px) {

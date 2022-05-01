@@ -2,6 +2,7 @@ import React from 'react'
 import './experience.css'
 import { BsPatchCheckFill } from 'react-icons/bs'
 
+// Définir le contenu des cartes au format Arrray
 const dataFrontend = [
   {
     id: 1,
@@ -66,6 +67,7 @@ const Experience = () => {
         <div className='experience_frontend'>
           <h3>Frontend</h3>
           <div className='experience__content'>
+            {/* Utiliser la méthode map pour placer tous les éléments dans la carte  */}
             {
               dataFrontend.map(({ id, competence }) => {
                 return (
